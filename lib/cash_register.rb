@@ -9,7 +9,7 @@ require'pry'
 class CashRegister
 
   attr_accessor :total, :discount, :last_transaction
-
+#why don't you need amount defined as well?
 
 
   def initialize(discount=0)

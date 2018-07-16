@@ -29,15 +29,3 @@ class CashRegister
 
 end
 
-
-=begin
-#why do you need to keep track of items in shopping bag?
-  def add_item(title, amount, quantity=1)
-+    self.total += amount * quantity
-+    quantity.times do
-+      items << title
-+    end
-+    self.last_transaction = amount * quantity
-+  end
-
-=end

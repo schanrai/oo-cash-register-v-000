@@ -9,8 +9,7 @@ require'pry'
 class CashRegister
 
   attr_accessor :total, :discount, :last_transaction
-#why don't you need amount and title defined as well as ?
-
+#why don't you need amount and title defined as well as the attributes above?
 
   def initialize(discount=0)
     @total = 0
@@ -22,18 +21,19 @@ class CashRegister
     self.total =+ amount * price
     self.last_transaction = quantity * price
   end
-=end
 
 
 
 =begin
+#why do you need to keep track of items in shopping bag?
   def add_item(title, amount, quantity=1)
 +    self.total += amount * quantity
 +    quantity.times do
-+      items << title
++      items << title     
 +    end
 +    self.last_transaction = amount * quantity
 +  end
+
 =end
 
 end

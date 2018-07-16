@@ -22,9 +22,13 @@ class CashRegister
   end
 
   def apply_discount
-    @total = @total * ((100.0 - discount) / 100.0)
+    if @discount == 0
+      return "There is no discount to apply."
+    else
+      @total = @total * ((100.0 - discount) / 100.0)
     #format("%1.f",a)
     #binding.pry
+    end
   end
 
 end

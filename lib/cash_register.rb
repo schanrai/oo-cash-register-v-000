@@ -9,7 +9,7 @@ require'pry'
 class CashRegister
 
   attr_accessor :total,:discount,:last_transaction
-#why don't you need amount and title defined as well as the attributes above?
+#why don't you need amount and title defined as well as the attributes above? there is no behaviour ofr funcitonality to price or title they are sttic d[ieces of data ]
 
   def initialize(discount=0)
     @total = 0
@@ -18,7 +18,7 @@ class CashRegister
 
 
   def add_item (title, amount, quantity =1)
-    self.total =+ quantity * amount
+    self.total += quantity * amount
 
     #self.last_transaction = quantity * amount
   end

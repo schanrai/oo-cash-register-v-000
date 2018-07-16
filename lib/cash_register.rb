@@ -1,1 +1,40 @@
+#Add items of varying quantities and prices
+#Calculate discounts
+#Keep track of what's been added to it
+#Void the last transaction
 
+##The apply_discount requires some knowledge about working with an Integer versus a Float in Ruby. Note that 100.class returns Integer while 100.0.class returns Float.
+#Ruby provides methods for changing an object of type Integer to a Float and vice versa.
+require'pry'
+class CashRegister
+
+  attr_accessor :total, :discount, :items, :last_transaction
+
+
+
+  def initialize(discount=0)
+    @total = 0
+    @discount = discount
+    items =[]
+  end
+
+=begin
+  def add_item (title, amount, quantity =1)
+    self.total =+ amount * price
+    self.last_transaction = quantity * price
+  end
+=end
+
+
+
+=begin
+  def add_item(title, amount, quantity=1)
++    self.total += amount * quantity
++    quantity.times do
++      items << title
++    end
++    self.last_transaction = amount * quantity
++  end
+=end
+
+end

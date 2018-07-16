@@ -22,7 +22,7 @@ class CashRegister
 
     #self.last_transaction = quantity * amount
   end
-
+end
 
 
 =begin
@@ -37,4 +37,4 @@ class CashRegister
 
 =end
 
-end
+

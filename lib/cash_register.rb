@@ -22,6 +22,7 @@ class CashRegister
     quantity.times do
     @items << title
     end
+    @last_transaction = quantity * amount
   end
 
 
@@ -33,7 +34,6 @@ class CashRegister
       return "After the discount, the total comes to $#{@total.to_i}."
     end
   end
-
 
 
 end

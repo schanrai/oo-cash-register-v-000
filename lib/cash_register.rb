@@ -8,7 +8,7 @@
 require'pry'
 class CashRegister
 
-  attr_accessor :total, :discount, :last_transaction
+  attr_accessor :total, :amount, :discount, :last_transaction
 #why don't you need amount and title defined as well as the attributes above?
 
   def initialize(discount=0)
